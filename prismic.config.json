@@ -1,0 +1,9 @@
+{
+  "repositoryName": "suburb-skate-ayaan",
+  "routes": [
+    {
+      "type": "skate_page",
+      "path": "/skate-page"
+    }
+  ]
+}

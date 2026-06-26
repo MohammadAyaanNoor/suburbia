@@ -12,11 +12,11 @@ export default async function Page() {
   const slices = bundleTextAndImageSlices(page.data.slices)
 
   return <SliceZone slices={slices} components={{...components,
-    text_and_image_bundle : ({slice} : SliceComponentProps<TextAndImageBundleSlice>)=>{
+    text_and_image_bundle : ({slice} : SliceComponentProps<TextAndImageBundleSlice>)=>(
       <div>
         <SliceZone slices={slice.slices} components={components} />
       </div>
-    }
+    )
   }} />;
 }
 

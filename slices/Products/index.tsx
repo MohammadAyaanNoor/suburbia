@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Content } from "@/prismicio/client";
+import { Content } from "@prismicio/client";
 import { PrismicRichText, PrismicText, SliceComponentProps } from "@prismicio/react";
 
 import { Bounded } from "../../app/components/bounded";

@@ -2,6 +2,7 @@ import { createClient } from '@/prismicio'
 import { PrismicNextImage, PrismicNextLink } from '@prismicio/next'
 import { Logo } from '@/app/components/Logo'
 import { Bounded } from './bounded'
+import { SlideIn } from './SlideIn'
 
 type Props = {}
 
@@ -22,10 +23,13 @@ export async function Footer({}: Props) {
         <Bounded as='nav'>
             <ul className='flex flex-wrap justify-center gap-8 fl-text-lg/xl'>
                 {settings.data.navigation.map((item)=>(
-                    <li key={item.link.text}>
+                    <SlideIn key={item.link.text}>
+
+                    <li key={item.link.text} className='hover:underline'>
                         <PrismicNextLink field={item.link}/>
 
                     </li>
+                    </SlideIn>
                 ))}
             </ul>
         </Bounded>

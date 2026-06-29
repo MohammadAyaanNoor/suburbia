@@ -27,14 +27,15 @@ const TextAndImage: FC<TextAndImageProps> = ({ slice,index }) => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       className = {clsx(
-        slice.primary.theme !== 'Lime' && 'sticky top-[calc((var(--index)*2rem)_-_4rem)]',
+        slice.primary.theme !== 'Lime' && 'sticky',
         slice.primary.theme === 'Blue' && 'bg-brand-blue bg-texture text-white',
         slice.primary.theme === 'Orange' && 'bg-brand-orange bg-texture text-white',
         slice.primary.theme === 'Navy' && 'bg-brand-navy bg-texture text-white',
-        slice.primary.theme === 'Lime' && 'relative bg-brand-lime bg-texture',
+        slice.primary.theme === 'Lime' && 'relative z-10 bg-brand-lime bg-texture',
       )}
       style={{
         '--index' : index,
+        top: slice.primary.theme !== 'Lime' ? `calc((${index} * 2rem) - 4rem)` : undefined,
       
       }}
     > 

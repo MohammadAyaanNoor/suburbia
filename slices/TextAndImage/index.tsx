@@ -35,7 +35,7 @@ const TextAndImage: FC<TextAndImageProps> = ({ slice,index }) => {
       )}
       style={{
         '--index' : index,
-        top: slice.primary.theme !== 'Lime' ? `calc((${index} * 2rem) - 4rem)` : undefined,
+        top: `calc((${index} * 2rem) - 4rem)`,
       
       }}
     > 

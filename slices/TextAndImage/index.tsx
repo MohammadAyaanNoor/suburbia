@@ -35,7 +35,7 @@ const TextAndImage: FC<TextAndImageProps> = ({ slice,index }) => {
       )}
       style={{
         '--index' : index,
-        top: `calc((${index} * 2rem) - 2rem)`,
+        top: `calc((${index} * 2rem) - 4rem)`,
 
 
       }}

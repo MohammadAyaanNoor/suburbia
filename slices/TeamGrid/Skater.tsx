@@ -38,10 +38,11 @@ export function Skater({skater,index}: Props) {
             
           </span>
          </h3>
-         <ButtonLink field={skater.data.customizer_link} size='sm'>
-          Build their Board
-         </ButtonLink>
+         
         </div>
+        <ButtonLink field={skater.data.customizer_link} size='sm'>
+          Build Their Boards
+         </ButtonLink>
     </div>
   )
 }

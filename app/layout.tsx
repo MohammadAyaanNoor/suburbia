@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Bowlby_One_SC,DM_Mono } from "next/font/google";
-import { Header } from "./components/Header";
+import { Header } from "@/app/components/Header";
 import { SVGFilters } from "./components/SVGFilters";
-import { Footer } from "./components/Footer";
+import { Footer } from "@/app/components/Footer";
 
 const bowlby = Bowlby_One_SC({
   variable: "--font-bowlby-sc",

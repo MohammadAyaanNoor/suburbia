@@ -35,8 +35,6 @@ const TextAndImage: FC<TextAndImageProps> = ({ slice,index }) => {
       )}
       style={{
         '--index' : index,
-        
-      
       }}
     > 
       <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-24">

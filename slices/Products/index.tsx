@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Content } from "@prismicio/client";
 import { PrismicRichText, PrismicText, SliceComponentProps } from "@prismicio/react";
 
-import { Bounded } from "../../app/components/bounded";
+import { Bounded } from "@/app/components/bounded";
 import { Skateboards } from "./Skateboards";
 import { Heading } from "@/app/components/Heading";
 import { isFilled } from "@prismicio/client";

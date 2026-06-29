@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
-import { ButtonLink } from './ButtonLink'
-import { Logo } from './Logo'
+import { ButtonLink } from '@/app/components/ButtonLink'
+import { Logo } from '@/app/components/Logo'
 import { createClient } from '@/prismicio'
 import { PrismicNextLink } from '@prismicio/next'
 

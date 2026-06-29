@@ -31,14 +31,11 @@ const TextAndImage: FC<TextAndImageProps> = ({ slice,index }) => {
         slice.primary.theme === 'Blue' && 'bg-brand-blue bg-texture text-white',
         slice.primary.theme === 'Orange' && 'bg-brand-orange bg-texture text-white',
         slice.primary.theme === 'Navy' && 'bg-brand-navy bg-texture text-white',
-        slice.primary.theme === 'Lime' && 'relative z-6 bg-brand-lime bg-texture',
+        slice.primary.theme === 'Lime' && 'relative bg-brand-lime bg-texture',
       )}
       style={{
         '--index' : index,
-        
-
-
-
+      
       }}
     > 
       <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-24">

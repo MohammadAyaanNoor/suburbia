@@ -103,3 +103,6 @@
 .skater:hover .skater-scribble-path {
   stroke-dashoffset: 0;
 }
+.stickyforotherbrowser{
+  position: -webkit-sticky;
+}

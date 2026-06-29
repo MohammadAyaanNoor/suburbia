@@ -47,6 +47,14 @@
             }
           }
         }
+      },
+      "footer_image": {
+        "type": "Image",
+        "config": {
+          "label": "Footer Image",
+          "constraint": {},
+          "thumbnails": []
+        }
       }
     }
   }

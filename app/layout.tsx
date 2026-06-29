@@ -34,7 +34,7 @@ export default function RootLayout({
       lang="en"
       className={`${bowlby.variable} ${dmMono.variable} antialiased font-mono font-medium text-zinc-800`}
     >
-      <body>
+      <body className="overflow-x-clip">
         <main>
         <Header/>
         {children}

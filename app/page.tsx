@@ -13,7 +13,7 @@ export default async function Page() {
 
   return <SliceZone slices={slices} components={{...components,
     text_and_image_bundle : ({slice} : SliceComponentProps<TextAndImageBundleSlice>)=>(
-      <div>
+      <div className="overflow-clip">
         <SliceZone slices={slice.slices} components={components} />
       </div>
     )

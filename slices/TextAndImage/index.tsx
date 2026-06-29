@@ -27,13 +27,18 @@ const TextAndImage: FC<TextAndImageProps> = ({ slice,index }) => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       className = {clsx(
-        slice.primary.theme !== 'Lime' && 'stickyforotherbrowser sticky top-[calc((var(--index)*2rem)-4rem)]',
+        slice.primary.theme !== 'Lime' && 'stickyforotherbrowser sticky',
         slice.primary.theme === 'Blue' && 'bg-brand-blue bg-texture text-white',
         slice.primary.theme === 'Orange' && 'bg-brand-orange bg-texture text-white',
         slice.primary.theme === 'Navy' && 'bg-brand-navy bg-texture text-white',
         slice.primary.theme === 'Lime' && 'relative bg-brand-lime bg-texture',
       )}
-      style={{'--index' : index}}
+      style={{
+        '--index' : index,
+        top: `calc((${index} * 2rem) - 2rem)`,
+
+
+      }}
     > 
       <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-24">
       <div className={clsx('flex items-center gap-8 flex-col text-center md:items-start md:text-left',slice.variation ==='imageOnLeft' && 'md:order-2')}>

@@ -27,7 +27,7 @@ const TextAndImage: FC<TextAndImageProps> = ({ slice,index }) => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       className = {clsx(
-        slice.primary.theme !== 'Lime' && 'stickyforotherbrowser sticky top-[calc((var(--index)*2rem)-4rem)]',
+        slice.primary.theme !== 'Lime' && 'stickyforotherbrowser sticky top-[calc((var(--index)*2rem)-2rem)]',
         slice.primary.theme === 'Blue' && 'bg-brand-blue bg-texture text-white',
         slice.primary.theme === 'Orange' && 'bg-brand-orange bg-texture text-white',
         slice.primary.theme === 'Navy' && 'bg-brand-navy bg-texture text-white',
